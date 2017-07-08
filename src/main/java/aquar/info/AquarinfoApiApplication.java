@@ -1,4 +1,4 @@
-package aquar.info.aquarinfoapi;
+package aquar.info;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package aquar.info.aquarinfoapi;
+package aquar.info;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
