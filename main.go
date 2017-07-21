@@ -5,15 +5,16 @@ import (
 )
 
 func main() {
-	mapping()
+	router := GetMappedRouter()
+	router.Run()
 }
 
-func mapping() {
+func GetMappedRouter() *gin.Engine {
 	router := gin.Default()
 	router.GET("/health", func(c *gin.Context) {
 		c.String(200, "fuck yeah!")
 	})
 	router.GET("/business", List)
 	router.POST("/business", Save)
-	router.Run()
+	return router
 }
